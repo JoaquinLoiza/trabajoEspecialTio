@@ -2,18 +2,23 @@
 <form>
     <div>
         <label>N1</label>
-        <input type="number">
+        <input type="number" id="operador1">
     </div>
     <div>
         <label>N2</label>
-        <input type="number">
+        <input type="number" id="operador2">
     </div>
-        <select name="operation">
-            <option value="value1">Sumar</option> 
-            <option value="value2">Restar</option>
-            <option value="value3">Multiplicar</option>
-            <option value="value4">Dividir</option>
+    <div>
+        <select name="operacion" id="operacion">
+            <option value="sumar">Sumar</option> 
+            <option value="restar">Restar</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
         </select>
+    </div>
+    <div>
+        <button id="btnCalcular">Calcular</button>
+    </div>
 </form> 
 {include 'footer.tpl'}
 
