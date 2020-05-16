@@ -1,5 +1,4 @@
 {include 'header.tpl'}
-<form>
     <div>
         <label>N1</label>
         <input type="number" id="operador1">
@@ -19,7 +18,7 @@
     <div>
         <button id="btnCalcular">Calcular</button>
     </div>
-</form> 
+    <p id="resultado"></p>
 {include 'footer.tpl'}
 
 
