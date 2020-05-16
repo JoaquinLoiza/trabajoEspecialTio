@@ -1,3 +1,4 @@
+{include 'header.tpl'}
 <form>
     <div>
         <label>N1</label>
@@ -14,5 +15,6 @@
             <option value="value4">Dividir</option>
         </select>
 </form> 
+{include 'footer.tpl'}
 
 
