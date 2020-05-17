@@ -10,7 +10,7 @@
 <body>
 <header>
     <nav>
-        <a href="#" role="button">Calculadora</a>
-        <a href="#" role="button">Quienes somos</a>
+        <a href="home" role="button">Calculadora</a>
+        <a href="nosotros" role="button">Quienes somos</a>
     </nav>
 </header>
