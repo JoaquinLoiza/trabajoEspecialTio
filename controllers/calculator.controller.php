@@ -13,9 +13,6 @@ class CalculatorController{
     }
     public function showCreators(){
         $creadores = $this->model->getCreators();
-        //funciona! http://localhost/trabajoespecialtio/trabajoEspecialTio/nosotros 
-        //por ejemplo, muestra el primer creador
-        echo $creadores[0]->creador;
         $this->view->viewCreator($creadores);
     }
 }
