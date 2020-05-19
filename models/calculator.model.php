@@ -18,7 +18,7 @@ class CalculatorModel{
         $db = $this->createConection();
         
            
-        $sentencia = $db->prepare("SELECT * FROM creadores"); 
+        $sentencia = $db->prepare("SELECT creador, ocupacion FROM creadores"); 
         $sentencia->execute();
         $usuarios = $sentencia->fetchAll(PDO::FETCH_OBJ); 
         
