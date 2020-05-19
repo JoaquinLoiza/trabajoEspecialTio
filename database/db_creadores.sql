@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-05-2020 a las 06:11:21
+-- Tiempo de generación: 19-05-2020 a las 03:19:59
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.4
 
@@ -30,17 +30,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `creadores` (
   `id_creador` int(11) NOT NULL,
   `creador` varchar(200) NOT NULL,
-  `email` varchar(200) NOT NULL
+  `email` varchar(200) NOT NULL,
+  `ocupacion` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `creadores`
 --
 
-INSERT INTO `creadores` (`id_creador`, `creador`, `email`) VALUES
-(1, 'Romina Dehesa', 'rominadehesa@gmail.com'),
-(2, 'Joaquin Loiza', 'loiza.joaquin@gmail.com'),
-(3, 'Marcela Aguirre', 'aguirremarcela@hotmail.com.ar');
+INSERT INTO `creadores` (`id_creador`, `creador`, `email`, `ocupacion`) VALUES
+(1, 'Romina Dehesa', 'rominadehesa@gmail.com', 'Estudiante de TUDAI'),
+(2, 'Joaquin Loiza', 'loiza.joaquin@gmail.com', 'Estudiante de TUDAI'),
+(3, 'Marcela Aguirre', 'aguirremarcela@hotmail.com.ar', 'Licenciada en Matemáticas y estudiante de TUDAI');
 
 --
 -- Índices para tablas volcadas
