@@ -17,8 +17,10 @@
     </div>
     <div>
         <button id="btnCalcular">Calcular</button>
+        <button id="btnPotencia">x^y</button>
+        <button id="logaritmo">log base</button>
     </div>
-    <p id="resultado"></p>
+    <p id="resultado"><br></p>
 {include 'footer.tpl'}
 
 
