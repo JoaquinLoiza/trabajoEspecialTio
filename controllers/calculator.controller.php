@@ -15,4 +15,7 @@ class CalculatorController{
         $creadores = $this->model->getCreators();
         $this->view->viewCreator($creadores);
     }
+    public function showHelp(){
+        $this->view->viewHelp(); 
+    }
 }
