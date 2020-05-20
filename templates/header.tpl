@@ -25,6 +25,7 @@
       <ul class="nav navbar-nav">
         <li><a href="home" role="button">Calculadora</a></li>
         <li><a href="nosotros" role="button">Quienes somos</a></li>
+        <li><a href="ayuda" role="button">Ayuda</a></li>
       </ul>
     </div>
   </div>
