@@ -15,6 +15,10 @@ require_once 'controllers/calculator.controller.php';
             $controller = new CalculatorController();
             $controller->showCreators();
         break;
+        case 'ayuda':
+            $controller = new CalculatorController();
+            $controller->showHelp();
+        break;
         default: 
             echo "404 not found";
         break;
