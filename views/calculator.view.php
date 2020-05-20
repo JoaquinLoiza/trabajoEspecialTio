@@ -14,4 +14,7 @@
             $this->smarty->assign('creadores', $creators);
             $this->smarty->display('quienesSomos.tpl');
         }
+        public function viewHelp(){
+            $this->smarty->display('ayuda.tpl'); 
+        }
 }
