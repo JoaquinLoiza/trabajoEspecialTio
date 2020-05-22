@@ -5,24 +5,25 @@ let opcion = document.getElementById("operacion");
 let btn = document.getElementById("btnCalcular");
 let btnP = document.getElementById("btnPotencia");
 let btnL=document.getElementById("logaritmo");
+let btnRaiz=document.getElementById("raizCuadrada");
 
 btnL.addEventListener("click", calcular1);
 btn.addEventListener("click", calcular);
+btnRaiz.addEventListener("click",calcular2);
 btnP.addEventListener("click", function (e) {
 let mostrar = document.getElementById("resultado");
 let a = parseInt(document.getElementById("operador1").value);
 let b = parseInt(document.getElementById("operador2").value);
-
+console.log(a);
 let resultado = 1;
 if ((isNaN(a) || isNaN(b)) || (isNaN(a) && isNaN(b))) {
     alert("hay uno o mas campos vacios");
     mostrar.innerHTML = "";
 }
-else {
-    for(let i = 0; i<b; i++){
-        resultado = resultado * a;
-    }
+else if(b>0){
+    resultado=Math.pow(a,b);
 }
+
 mostrar.innerHTML = resultado;
 });
 
@@ -71,4 +72,28 @@ function calcular1(){
         resultado=(Math.log10(b)/Math.log10(a));
          mostrar.innerHTML = resultado;
     }
+}
+function calcular2(){
+    let a = parseInt(document.getElementById("operador1").value);
+    let b = parseInt(document.getElementById("operador2").value);
+    let mostrar = document.getElementById("resultado");
+    let resultado=0;
+    console.log(a);
+    console.log(b);
+    if (a%2 == 0 && a>0){
+        if(b>=0){
+            resultado= Math.pow(b,1/a); 
+            alert(resultado); 
+        }
+        else{
+            alert("Error");
+        }     
+    }
+    else if(!a %2==0 && a>0 && b>=0) {
+        resultado=Math.pow(b,1/a);
+    }
+    else if(!a %2==0 && a>0 && b<0){
+        resultado=-Math.pow(-b,1/a);
+    }
+    mostrar.innerHTML=resultado;
 }
