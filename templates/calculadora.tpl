@@ -2,11 +2,11 @@
 <div class="cont_calculadora">
     <div>
         <label>N1</label>
-        <input type="number" id="operador1">
+        <input type="text" id="operador1">
     </div>
     <div>
         <label>N2</label>
-        <input type="number" id="operador2">
+        <input type="text" id="operador2">
     </div>
     <div>
         <label>OP</label>
@@ -22,6 +22,7 @@
         <button id="btnCalcular">Calcular</button>
         <button id="btnPotencia">x^y</button>
         <button id="logaritmo">log base</button>
+        <button id="raizCuadrada">Raiz</button>
     </div>
     <div class="cont_resultado">
         <span class="total">Total: </span>
