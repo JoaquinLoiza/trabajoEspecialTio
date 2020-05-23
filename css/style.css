@@ -23,10 +23,20 @@ header[role="banner"] #logo-main {
       flex-direction: column;
       text-align: center;
 }
+.cont_creadores{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
 .cont{
   margin:4px 0 4px 0;
 }
 .total {
     font-size: large;
     font-weight: bold;
+}
+.border{
+  border: 1px solid black;
 }
