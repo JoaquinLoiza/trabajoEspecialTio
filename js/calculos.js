@@ -7,9 +7,9 @@ let btnP = document.getElementById("btnPotencia");
 let btnL=document.getElementById("logaritmo");
 let btnRaiz=document.getElementById("raizCuadrada");
 
-btnL.addEventListener("click", calcular1);
-btn.addEventListener("click", calcular);
-btnRaiz.addEventListener("click",calcular2);
+btnL.addEventListener("click", calcularLogaritmo);
+btn.addEventListener("click", operaciones);
+btnRaiz.addEventListener("click",calcularRaiz);
 btnP.addEventListener("click", function (e) {
 let mostrar = document.getElementById("resultado");
 let a = parseInt(document.getElementById("operador1").value);
@@ -27,11 +27,7 @@ else if(b>0){
 mostrar.innerHTML = resultado;
 });
 
-
-
-
-
-function calcular() {
+function operaciones() {
     let a = parseInt(document.getElementById("operador1").value);
     let b = parseInt(document.getElementById("operador2").value);
     let opcionSelect = opcion.options[opcion.selectedIndex].value;
@@ -63,7 +59,7 @@ function calcular() {
     }
 }
 
-function calcular1(){
+function calcularLogaritmo(){
     let a = parseInt(document.getElementById("operador1").value);
     let b = parseInt(document.getElementById("operador2").value);
     let mostrar = document.getElementById("resultado");
@@ -73,13 +69,11 @@ function calcular1(){
          mostrar.innerHTML = resultado;
     }
 }
-function calcular2(){
+function calcularRaiz(){
     let a = parseInt(document.getElementById("operador1").value);
     let b = parseInt(document.getElementById("operador2").value);
     let mostrar = document.getElementById("resultado");
     let resultado=0;
-    console.log(a);
-    console.log(b);
     if (a%2 == 0 && a>0){
         if(b>=0){
             resultado= Math.pow(b,1/a); 
