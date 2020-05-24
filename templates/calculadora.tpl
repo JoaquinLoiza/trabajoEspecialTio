@@ -1,5 +1,5 @@
 {include 'header.tpl'}
-<div class="cont_calculadora">
+<div class="cont_calculadora container">
     <div class="cont">
         <label>N1 / x</label>
         <input type="number" id="operador1">
@@ -22,7 +22,7 @@
         <button id="btnCalcular">Calcular</button>
         <button id="btnPotencia">x<sup>y</sup></button>
         <button id="logaritmo">log<sub>X </sub>y</button>
-        <button id="raizCuadrada">Raiz</button>
+        <button id="raizCuadrada"><sup>x</sup>&#8730;y</button>
     </div>
     <div class="cont_resultado cont">
         <span class="total">Total: </span>
