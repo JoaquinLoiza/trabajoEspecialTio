@@ -1,5 +1,5 @@
 {include "header.tpl"}
-    <div class="cont_ayuda">
+    <div class="cont_ayuda container">
         <h1>Manual para el uso de la calculadora online</h1> 
         <p>La misma cuenta con dos campos. 
         El primer campo hace referencia al primer numero (N1) y el segundo campo, al segundo numero (N2). 
