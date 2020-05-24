@@ -2,6 +2,10 @@ header[role="banner"] #logo-main {
   display: block;
   margin: 20px auto;
 }
+body{
+  background-image: url(https://i.ibb.co/MsSgPS0/calculator.jpg);
+  background-size: 100%;
+}
 #navbar-primary.navbar-default {
   background: transparent;
   border: none;
@@ -17,6 +21,9 @@ header[role="banner"] #logo-main {
 #navbar-primary.navbar-default .navbar-nav > li > a {
   padding-left: 30px;
   padding-right: 30px;
+}
+.container {
+  height: 400px;
 }
 .cont_calculadora{
       display: flex;
@@ -47,4 +54,7 @@ header[role="banner"] #logo-main {
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
+}
+.footer{
+  text-align: center;
 }
