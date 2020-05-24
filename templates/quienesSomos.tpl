@@ -1,5 +1,5 @@
 {include 'header.tpl'}
-<div class="cont_creadores">
+<div class="cont_creadores container">
     <h1>Creadores</h1>
     <table>
         <thead>
