@@ -77,7 +77,6 @@ function calcularRaiz(){
     if (a%2 == 0 && a>0){
         if(b>=0){
             resultado= Math.pow(b,1/a); 
-            alert(resultado); 
         }
         else{
             alert("Error");
